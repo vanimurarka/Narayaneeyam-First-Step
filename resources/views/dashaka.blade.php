@@ -8,22 +8,28 @@
     </style>
     </HEAD>
     <body>
-        <TABLE align="center" cellspacing="0" width="700">
-            <tr>
-                <td colspan="3" align="center">
-                <img src="images/narayaneeyam11.gif" alt="Shriman Narayaneeyam">
-                    <br>
-                    <br>
-                </td>
-            </tr>
-            <TR>
-                <td width="175">&nbsp;</td>
-                <TD align="center">
-                    <a href="index.html">Home</a> | <a href="{{$next}}">Dashaka {{$nextNumber}}</a>
-                </TD>
-                <td width="175" align="right"><font size="+1"><a href="{{$thisH}}">हिन्दी</a></font></td>
-            </TR>
-        </TABLE>
+        <div style="text-align: center">
+            <img src="images/narayaneeyam11.gif" alt="Shriman Narayaneeyam">
+            <p>
+                @if ($lang == 'en')
+                    @if ($dashakaNumber > 1)
+                        <a href="dashaka{{$dashakaNumber-1}}">Dashaka {{$dashakaNumber-1}}</a> | 
+                    @endif
+                    <a href="index.php">Home</a> | <a href="dashaka{{$dashakaNumber+1}}">Dashaka {{$dashakaNumber+1}}</a>
+                @else
+                    @if ($dashakaNumber > 1)
+                        <a href="dashaka{{$dashakaNumber-1}}h">दशक {{$dashakaNumber-1}}</a> | 
+                    @endif
+                    <a href="{{URL::to('/')}}">प्रारंभ</a> | <a href="dashaka{{$dashakaNumber+1}}h">दशक {{$dashakaNumber+1}}</a>
+                @endif
+            </p>
+            @if ($lang == 'en')
+                <font size="+1"><a href="dashaka{{$dashakaNumber}}h">हिन्दी</a></font>
+            @else
+                <a href="dashaka{{$dashakaNumber}}">English</a>
+            @endif
+        </div>
+        
         <br>
         <!-- div style="margin-top:20px;margin-bottom:20px;text-align: center;font-weight: bold;font-size: 22px;">
             <audio controls preload="none">
@@ -40,8 +46,18 @@
                 </td>
             </TR>
         </TABLE>
-        <p align="center">
-            <a href="index.html">Home</a> | <a href="{{$next}}">Dashaka {{$nextNumber}}</a>
+        <p style="text-align: center;"> 
+        @if ($lang == 'en')
+            @if ($dashakaNumber > 1)
+                <a href="dashaka{{$dashakaNumber-1}}">Dashaka {{$dashakaNumber-1}}</a> | 
+            @endif
+            <a href="index.php">Home</a> | <a href="dashaka{{$dashakaNumber+1}}">Dashaka {{$dashakaNumber+1}}</a>
+        @else
+            @if ($dashakaNumber > 1)
+                <a href="dashaka{{$dashakaNumber-1}}h">दशक {{$dashakaNumber-1}}</a> | 
+            @endif
+            <a href="{{URL::to('/')}}">प्रारंभ</a> | <a href="dashaka{{$dashakaNumber+1}}h">दशक {{$dashakaNumber+1}}</a>
+        @endif
         </p>
 <!-- Yahoo! Web Analytics - All rights reserved -->
 <script type="text/javascript" src="http://d.yimg.com/mi/eu/ywa.js"></script>
