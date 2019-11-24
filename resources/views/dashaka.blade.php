@@ -1,29 +1,6 @@
-<?php 
-
-    $next = "";
-    $thisH = "";
-    $nextNumber = 0;
-
-    $path = public_path().'/'.$slug.'.html'; 
-    $fileExists = File::exists($path);
-    $dashakaNumber = str_replace("dashaka","",$slug); // strip 'dashaka' from slug
-    $dashakaNumber = str_replace("h", "", $dashakaNumber); // strip h from slug for hindi if it is there
-    $dashakaNumber = (int)$dashakaNumber;
-    $dashakaText = '';
-    if (($fileExists) && ($dashakaNumber > 0))
-    {
-        $dashakaText = file_get_contents($path);
-        $next = "dashaka".($dashakaNumber+1);
-        $thisH = "dashaka".$dashakaNumber."h";
-        $nextNumber = $dashakaNumber + 1;
-    }
-    else
-        $dashakaText = "File not found";
-    
-?>
 <html>
     <HEAD>
-        <TITLE>Narayaneeyam - FirstStep - Dasaka 1</TITLE>
+        <TITLE>Narayaneeyam - FirstStep - Dasaka {{$dashakaNumber}}</TITLE>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <style type="text/css"> body {font-family: "Verdana", "Helvetica", sans-serif; color: "#2A2A2A"; background-color: #C7BBE4; background-image: url('images/bg.jpg');}
     a:link { color: #4500E4; }
