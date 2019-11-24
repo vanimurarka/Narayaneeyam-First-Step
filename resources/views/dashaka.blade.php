@@ -9,7 +9,11 @@
     </HEAD>
     <body>
         <div style="text-align: center">
-            <img src="images/narayaneeyam11.gif" alt="Shriman Narayaneeyam">
+            @if ($lang == 'en')
+                <img src="images/narayaneeyam11.gif" alt="Shriman Narayaneeyam">
+            @else
+                <img src="images/narayaneeyam11h.png" alt="Shriman Narayaneeyam">
+            @endif
             <p>
                 @if ($lang == 'en')
                     @if ($dashakaNumber > 1)
