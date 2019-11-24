@@ -1,0 +1,46 @@
+<script type="text/javascript" src="securimage/verifyCaptcha.js"></script>
+<script Language="JavaScript">
+function submitform()
+{
+	var re = /^.+@.+\..+$/;
+    var email = document.getElementById('emailID');
+    if (!re.test(email.value)) 
+    {
+      alert("Please enter a valid email address");
+      email.focus;
+      return false;
+    }
+    else
+    {
+    	return true;
+    }
+	/*var captcha = verifyCaptcha(document.getElementById("captcha_code").value);
+	if (captcha === "true")
+	{
+		return true;
+	}
+	else
+	{
+		alert("The verification code you entered does not match. Please try another image or write to the email address given at the bottom of the form. Thank you.")
+		return false;
+	}*/
+}
+</script>
+
+	<form method="post" action="contact_form.php" id="contactform" onsubmit="return submitform();">
+	Name :<br/>
+	<input type="text" name="name" size="25"><br/>
+	Email :<br/>
+	<input type="text" name="email" size="25" id="emailID"><br/>
+	Your Feedback :<br/>
+	<textarea rows="6" name="comments" cols="50"></textarea><br/>
+	Please fill the captcha below:
+	<!-- img id="captcha" src="securimage/securimage_show.php" alt="CAPTCHA Image" />
+	<br/>
+	Enter Code Above:<br/>
+	<input type="text" name="captcha_code" id="captcha_code" size="10" maxlength="6" />
+	<a href="#" onclick="document.getElementById('captcha').src = 'securimage/securimage_show.php?' + Math.random(); return false">[ Different Image ]</a>
+	<br/ -->
+	<div class="g-recaptcha" data-sitekey="6LeKPhYTAAAAAL3qeCmdEM1Xe_-nMwZJazBF0-yP"></div>
+	<input type="submit" value="Submit" name="B1">
+	</form>

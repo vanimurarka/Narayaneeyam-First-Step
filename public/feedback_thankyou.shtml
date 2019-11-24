@@ -1,0 +1,56 @@
+﻿<HTML>
+	<HEAD>
+		<TITLE>Narayaneeyam: Feedback</TITLE>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+		<script type="text/javascript" src="javascript.js"></script>
+		<style type="text/css"> body {font-family: "Verdana", "Helvetica", sans-serif; color: "#2A2A2A"; background-color: #C7BBE4; background-image: url('images/bg.jpg');}
+	a:link { color: #4500E4; }
+	p {font-size: 80%; color: #3F3F3F;}
+	</style>
+		<!--
+22
+62
+38
+96 --
+-->
+	</HEAD>
+	<BODY>
+		<div id="header" align="center">
+		
+		</div>
+		<TABLE align="center" border="2" cellspacing="0" width="700" bordercolor="#e6673c">
+			<TR>
+				
+				<TD align="center"><br>					
+					<img src="images/narayaneeyam11.gif" alt="Shriman Narayaneeyam"><br>
+					<!--#include virtual="header.html" -->
+					<br>
+					Thank you so much for your feedback! I will get back to you as soon as I can.<br/>
+					~ Asha
+					<p>
+						<a href="introduction.html">Introduction</a> | <a href="index.html">Home</a> | <a href="about.html">About the 
+							Website</a><br>
+							<font size="+1"><a href="indexh.html">हिन्दी</a></font><br>
+						<br>											
+					</p>					
+<!--#include virtual="footer.html" -->
+				</TD>				
+			</TR>			
+		</TABLE><br>
+		<div id="footer" align="center">
+		
+		</div>
+<!-- Yahoo! Web Analytics - All rights reserved -->
+<script type="text/javascript" src="http://d.yimg.com/mi/eu/ywa.js"></script>
+<script type="text/javascript">
+/*globals YWA*/
+var YWATracker = YWA.getTracker("10001554166645");
+//YWATracker.setDocumentName("");
+//YWATracker.setDocumentGroup("");
+YWATracker.submit();
+</script>
+<noscript>
+<div><img src="http://s.analytics.yahoo.com/p.pl?a=10001554166645&amp;js=no" width="1" height="1" alt="" /></div>
+</noscript>
+	</BODY>
+</HTML>

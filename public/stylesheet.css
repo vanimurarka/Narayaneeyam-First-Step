@@ -1,0 +1,11 @@
+#header {width: 700; color: red;}
+
+#above_feedback {font-size: 16px; width: 650px; text-align: left;}
+#feedback {background-color: white; width: 600px; text-align: left; font-size: 14px; padding: 2px; margin-bottom: 15px;}
+#feedback span {font-size: 14px;}
+#name {float: left; border-bottom: 1px solid #C7BBE4; font-weight: bold;}
+#date {float: right; border-bottom: 1px solid #C7BBE4; font-weight: bold;}
+
+#footer {width: 700;}
+#footer div {display: block; width: 500;}
+#footer div  div{display: none;}
