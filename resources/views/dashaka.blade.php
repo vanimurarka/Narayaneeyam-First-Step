@@ -15,12 +15,12 @@
                     @if ($dashakaNumber > 1)
                         <a href="dashaka{{$dashakaNumber-1}}">Dashaka {{$dashakaNumber-1}}</a> | 
                     @endif
-                    <a href="index.php">Home</a> | <a href="dashaka{{$dashakaNumber+1}}">Dashaka {{$dashakaNumber+1}}</a>
+                    <a href="{{URL::to('/')}}">Home</a> | <a href="dashaka{{$dashakaNumber+1}}">Dashaka {{$dashakaNumber+1}}</a>
                 @else
                     @if ($dashakaNumber > 1)
                         <a href="dashaka{{$dashakaNumber-1}}h">दशक {{$dashakaNumber-1}}</a> | 
                     @endif
-                    <a href="{{URL::to('/')}}">प्रारंभ</a> | <a href="dashaka{{$dashakaNumber+1}}h">दशक {{$dashakaNumber+1}}</a>
+                    <a href="{{URL::to('/indexh.html')}}">प्रारंभ</a> | <a href="dashaka{{$dashakaNumber+1}}h">दशक {{$dashakaNumber+1}}</a>
                 @endif
             </p>
             @if ($lang == 'en')
@@ -51,25 +51,13 @@
             @if ($dashakaNumber > 1)
                 <a href="dashaka{{$dashakaNumber-1}}">Dashaka {{$dashakaNumber-1}}</a> | 
             @endif
-            <a href="index.php">Home</a> | <a href="dashaka{{$dashakaNumber+1}}">Dashaka {{$dashakaNumber+1}}</a>
+            <a href="{{URL::to('/')}}">Home</a> | <a href="dashaka{{$dashakaNumber+1}}">Dashaka {{$dashakaNumber+1}}</a>
         @else
             @if ($dashakaNumber > 1)
                 <a href="dashaka{{$dashakaNumber-1}}h">दशक {{$dashakaNumber-1}}</a> | 
             @endif
-            <a href="{{URL::to('/')}}">प्रारंभ</a> | <a href="dashaka{{$dashakaNumber+1}}h">दशक {{$dashakaNumber+1}}</a>
+            <a href="{{URL::to('/indexh.html')}}">प्रारंभ</a> | <a href="dashaka{{$dashakaNumber+1}}h">दशक {{$dashakaNumber+1}}</a>
         @endif
         </p>
-<!-- Yahoo! Web Analytics - All rights reserved -->
-<script type="text/javascript" src="http://d.yimg.com/mi/eu/ywa.js"></script>
-<script type="text/javascript">
-/*globals YWA*/
-var YWATracker = YWA.getTracker("10001554166645");
-//YWATracker.setDocumentName("");
-//YWATracker.setDocumentGroup("");
-YWATracker.submit();
-</script>
-<noscript>
-<div><img src="http://s.analytics.yahoo.com/p.pl?a=10001554166645&amp;js=no" width="1" height="1" alt="" /></div>
-</noscript>
     </body>
 </html>
