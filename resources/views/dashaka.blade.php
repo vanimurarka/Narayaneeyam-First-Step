@@ -33,15 +33,16 @@
                 <a href="dashaka{{$dashakaNumber}}">English</a>
             @endif
         </div>
-        
         <br>
-        <!-- div style="margin-top:20px;margin-bottom:20px;text-align: center;font-weight: bold;font-size: 22px;">
+        @if ($dashakaNumber < 34)
+        <div style="margin-top:20px;margin-bottom:20px;text-align: center;font-weight: bold;font-size: 22px;">
             <audio controls preload="none">
-              <source src="audio/01.m4a" type="audio/mpeg">
+              <source src="audio/0{{$dashakaNumber}}.m4a" type="audio/mpeg">
               ...
             </audio>
             <br/>
-        </div -->
+        </div>
+        @endif
         <TABLE align="center" cellspacing="0" width="765" border="1" bordercolor="#e6673c" STYLE="BACKGROUND-IMAGE: url(images/g3.jpg)"
             cellpadding="10">
             <TR>
