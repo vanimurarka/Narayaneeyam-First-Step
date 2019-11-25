@@ -34,7 +34,7 @@
             @endif
         </div>
         <br>
-        @if ($dashakaNumber < 37)
+        @if ($dashakaNumber < 55)
         <div style="margin-top:20px;margin-bottom:20px;text-align: center;font-weight: bold;font-size: 22px;">
             <audio controls preload="none">
               <source src="audio/0{{$dashakaNumber}}.m4a" type="audio/mpeg">
