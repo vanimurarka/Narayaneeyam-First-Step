@@ -34,11 +34,10 @@
             @endif
         </div>
         <br>
-        @if ($dashakaNumber < 58)
         <div style="margin-top:20px;margin-bottom:20px;text-align: center;font-weight: bold;font-size: 22px;">
             <audio controls preload="none">
                 @if ($dashakaNumber > 54)
-                    <source src="audio/0{{$dashakaNumber}}.mp3" type="audio/mpeg">
+                    <source src="audio/0{{$dashakaNumber}} a.mp3" type="audio/mpeg">
                 @else
                     <source src="audio/0{{$dashakaNumber}}.m4a" type="audio/mpeg">
                 @endif
@@ -46,7 +45,6 @@
             </audio>
             <br/>
         </div>
-        @endif
         <TABLE align="center" cellspacing="0" width="765" border="1" bordercolor="#e6673c" STYLE="BACKGROUND-IMAGE: url(images/g3.jpg)"
             cellpadding="10">
             <TR>
