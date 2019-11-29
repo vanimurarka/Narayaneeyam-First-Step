@@ -11,8 +11,8 @@
 
 	$name = $_POST["name"];
 	$email = $_POST["email"];
-	$city = $_POST["city"];
-	$country = $_POST["country"];
+	// $city = $_POST["city"];
+	// $country = $_POST["country"];
 	$comment = $_POST["comments"];
 
 	// verifying captcha
