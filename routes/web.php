@@ -15,4 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('feedback', function () {
+    return view('feedback');
+});
+
 Route::get('/{slug}', 'ShowDashaka');
