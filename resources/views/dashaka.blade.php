@@ -42,10 +42,14 @@
         <br>
         <div style="margin-top:20px;margin-bottom:20px;text-align: center;font-weight: bold;font-size: 22px;">
             <audio controls preload="none">
-                @if ($dashakaNumber > 54)
-                    <source src="audio/0{{$dashakaNumber}} a.mp3" type="audio/mpeg">
+                @if ($dashakaNumber == 100)
+                    <source src="audio/{{$dashakaNumber}} a.mp3" type="audio/mpeg">
                 @else
-                    <source src="audio/0{{$dashakaNumber}}.m4a" type="audio/mpeg">
+                    @if ($dashakaNumber > 54)
+                        <source src="audio/0{{$dashakaNumber}} a.mp3" type="audio/mpeg">
+                    @else
+                        <source src="audio/0{{$dashakaNumber}}.m4a" type="audio/mpeg">
+                    @endif
                 @endif
               ...
             </audio>
