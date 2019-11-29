@@ -19,12 +19,18 @@
                     @if ($dashakaNumber > 1)
                         <a href="dashaka{{$dashakaNumber-1}}">Dashaka {{$dashakaNumber-1}}</a> | 
                     @endif
-                    <a href="{{URL::to('/')}}">Home</a> | <a href="dashaka{{$dashakaNumber+1}}">Dashaka {{$dashakaNumber+1}}</a>
+                    <a href="{{URL::to('/')}}">Home</a>
+                    @if ($dashakaNumber < 100)
+                        | <a href="dashaka{{$dashakaNumber+1}}">Dashaka {{$dashakaNumber+1}}</a>
+                    @endif
                 @else
                     @if ($dashakaNumber > 1)
                         <a href="dashaka{{$dashakaNumber-1}}h">दशक {{$dashakaNumber-1}}</a> | 
                     @endif
-                    <a href="{{URL::to('/indexh.html')}}">प्रारंभ</a> | <a href="dashaka{{$dashakaNumber+1}}h">दशक {{$dashakaNumber+1}}</a>
+                    <a href="{{URL::to('/indexh.html')}}">प्रारंभ</a> 
+                    @if ($dashakaNumber < 100)
+                        | <a href="dashaka{{$dashakaNumber+1}}h">दशक {{$dashakaNumber+1}}</a>
+                    @endif
                 @endif
             </p>
             @if ($lang == 'en')
@@ -58,12 +64,18 @@
             @if ($dashakaNumber > 1)
                 <a href="dashaka{{$dashakaNumber-1}}">Dashaka {{$dashakaNumber-1}}</a> | 
             @endif
-            <a href="{{URL::to('/')}}">Home</a> | <a href="dashaka{{$dashakaNumber+1}}">Dashaka {{$dashakaNumber+1}}</a>
+            <a href="{{URL::to('/')}}">Home</a>
+            @if ($dashakaNumber < 100)
+                | <a href="dashaka{{$dashakaNumber+1}}">Dashaka {{$dashakaNumber+1}}</a>
+            @endif
         @else
             @if ($dashakaNumber > 1)
                 <a href="dashaka{{$dashakaNumber-1}}h">दशक {{$dashakaNumber-1}}</a> | 
             @endif
-            <a href="{{URL::to('/indexh.html')}}">प्रारंभ</a> | <a href="dashaka{{$dashakaNumber+1}}h">दशक {{$dashakaNumber+1}}</a>
+            <a href="{{URL::to('/indexh.html')}}">प्रारंभ</a> 
+            @if ($dashakaNumber < 100)
+                | <a href="dashaka{{$dashakaNumber+1}}h">दशक {{$dashakaNumber+1}}</a>
+            @endif
         @endif
         </p>
     </body>
