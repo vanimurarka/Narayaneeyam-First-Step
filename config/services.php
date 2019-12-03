@@ -32,6 +32,7 @@ return [
 
     'google' => [
         'recaptha-secret' => env('GOOGLE_RECAPTCHA_SECRET','secret'),
+        'site-key' => env('GOOGLE_SITEKEY','sitekey'),
     ],
 
 ];

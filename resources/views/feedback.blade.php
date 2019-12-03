@@ -45,7 +45,7 @@
 						Your Feedback :<br/>
 						<textarea rows="6" name="comments" cols="50" required></textarea><br/>
 						Please fill the captcha below:
-						<div class="g-recaptcha" data-sitekey="6LeKPhYTAAAAAL3qeCmdEM1Xe_-nMwZJazBF0-yP"></div>
+						<div class="g-recaptcha" data-sitekey="{{config('services.google')['site-key']}}"></div>
 						<input type="submit" value="Submit" name="B1">
 						</form>
 

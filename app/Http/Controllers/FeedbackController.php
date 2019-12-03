@@ -26,7 +26,7 @@ class FeedbackController extends Controller
 
         $captcha_url = "https://www.google.com/recaptcha/api/siteverify";
         $params = array();
-        $params['secret'] = '6LeKPhYTAAAAAMErVME-KhpSvWuo4TOz_ttC3iT9'; 
+        $params['secret'] = config('services.google')['recaptha-secret']; 
 
         $params['response'] = Request::get('g-recaptcha-response');
 
