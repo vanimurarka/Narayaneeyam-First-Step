@@ -15,4 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// Route::get('feedback', function () {
+//     return view('feedback');
+// })->name('feedback');
+Route::get('feedback', 'FeedbackController@showFeedback')->name('feedback');
+Route::post('submit-feedback', 'FeedbackController@receiveFeedback')->name('submit-feedback');
+
 Route::get('/{slug}', 'ShowDashaka');

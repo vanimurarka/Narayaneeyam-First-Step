@@ -58,7 +58,7 @@
                             <a href="dashaka95">95</a> | <a href="dashaka96">96</a> | <a href="dashaka97">97</a> | 
                             <a href="dashaka98">98</a> | <a href="dashaka99">99</a> | <a href="dashaka100">100</a> <br />
 </font>
-                        <br>All Dashakas in PDF format: <a href="narayaneeyam-all-dashakas-combined.zip">narayaneeyam-all-dashakas-combined.zip (8.8 MB)</a><br/><br/><a href="feedback.shtml">Feedback Page</a>
+                        <br>All Dashakas in PDF format: <a href="narayaneeyam-all-dashakas-combined.zip">narayaneeyam-all-dashakas-combined.zip (8.8 MB)</a><br/><br/><a href="{{route('feedback')}}">Feedback Page</a>
                         <br />
                         Contact / Feedback : <a href="mailto:ashamurarka@gmail.com">Asha Murarka</a>
                     </p>
