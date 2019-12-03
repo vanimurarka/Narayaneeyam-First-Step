@@ -22,7 +22,7 @@ class FeedbackController extends Controller
         $_fileToAddTo = public_path().'/'.'collected_feedback.txt';
         $data = 
 
-        $captchaPassed = true;
+        $captchaPassed = false;
 
         $captcha_url = "https://www.google.com/recaptcha/api/siteverify";
         $params = array();
