@@ -33,7 +33,6 @@ class FeedbackController extends Controller
         $postData = 'secret='.$params['secret'].'&response='.$params['response']; 
 
         $output = file_get_contents($captcha_url."?".$postData);
-        dd($output);
         $json = json_decode($output);
         if($json->success == 1) // captcha passed
             $captchaPassed = true;
