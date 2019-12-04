@@ -21,4 +21,5 @@ Route::get('/', function () {
 Route::get('feedback', 'FeedbackController@showFeedback')->name('feedback');
 Route::post('submit-feedback', 'FeedbackController@receiveFeedback')->name('submit-feedback');
 
+Route::get('/generate-docx/{slug}', 'WordDashaka');
 Route::get('/{slug}', 'ShowDashaka');
