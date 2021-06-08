@@ -19,8 +19,8 @@ class FeedbackController extends Controller
     {
 
         $_subject = "Narayaneeyam First Step Feedback";
-        $_fileToAddTo = public_path().'/'.'collected_feedback.txt';
-        $data = 
+        // $_fileToAddTo = public_path().'/'.'collected_feedback.txt';
+        // $data = 
 
         $captchaPassed = false;
 
@@ -43,9 +43,9 @@ class FeedbackController extends Controller
             Mail::to(config('mail.to'))
                 ->send(new Feedback($data));
 
-            $fileContents = file_get_contents($_fileToAddTo);
-            $fileNewContents = "<div id='feedback'>.<span id='name'>Name: ".$data['name']."</span><span id='date'>".date('l jS \of F Y')."</span><br><br>".$data['comments']." </div>".$fileContents;
-            file_put_contents($_fileToAddTo, $fileNewContents);
+            // $fileContents = file_get_contents($_fileToAddTo);
+            // $fileNewContents = "<div id='feedback'>.<span id='name'>Name: ".$data['name']."</span><span id='date'>".date('l jS \of F Y')."</span><br><br>".$data['comments']." </div>".$fileContents;
+            // file_put_contents($_fileToAddTo, $fileNewContents);
 
             return redirect('feedback_thankyou.shtml');
         }
