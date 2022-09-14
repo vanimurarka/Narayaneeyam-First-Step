@@ -61,6 +61,8 @@
                         <br>All Dashakas in PDF format: <a href="narayaneeyam-all-dashakas-combined.zip">narayaneeyam-all-dashakas-combined.zip (8.8 MB)</a><br/><br/><a href="{{route('feedback')}}">Feedback Page</a>
                         <br />
                         Contact / Feedback : <a href="mailto:ashamurarka@gmail.com">Asha Murarka</a>
+                        <br><br>
+                        Visit our other website: <a href="https://bhaagavatam-firststep.org/" target="_blank">Bhaagavatam First-Step</a>
                     </p>
                 </TD>
             </TR>
