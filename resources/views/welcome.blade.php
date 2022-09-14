@@ -62,7 +62,7 @@
                         <br />
                         Contact / Feedback : <a href="mailto:ashamurarka@gmail.com">Asha Murarka</a>
                         <br><br>
-                        Visit our other website: <a href="https://bhaagavatam-firststep.org/" target="_blank">Bhaagavatam First-Step</a>
+                        <b>Visit our other website: <a href="https://bhaagavatam-firststep.org/" target="_blank">Bhaagavatam First-Step</a></b>
                     </p>
                 </TD>
             </TR>
