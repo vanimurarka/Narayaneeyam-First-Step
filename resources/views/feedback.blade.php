@@ -32,26 +32,8 @@
 				
 				<TD align="center"><br>					
 					<img src="images/narayaneeyam11.gif" alt="Shriman Narayaneeyam"><br>
-					<br><script src='https://www.google.com/recaptcha/api.js'></script>
-					<div id="feedback_form" style="display:table;margin:0 auto;text-align:left;max-width:400px;">
-						
-
-						<form method="post" action="{{route('submit-feedback')}}" id="contactform">
-							@csrf
-						Name :<br/>
-						<input type="text" name="name" size="25" required><br/>
-						Email :<br/>
-						<input type="email" name="email" size="25" id="emailID" required><br/>
-						Your Feedback :<br/>
-						<textarea rows="6" name="comments" cols="50" required></textarea><br/>
-						Please fill the captcha below:
-						<div class="g-recaptcha" data-sitekey="{{config('services.google')['site-key']}}"></div>
-						<input type="submit" value="Submit" name="B1">
-						</form>
-
-						<br/>
-						If you were unable to contact me using the form above, please write to <a href="mailto:ashamurarka@gmail.com">ashamurarka@gmail.com</a>.
-					</div>
+					<br>
+					<b>Please write to <a href="mailto:ashamurarka@gmail.com">ashamurarka@gmail.com</a>.</b>
 					<div id="above_feedback">
 					<hr/>
 					<!-- To submit your feedback, please send an e-mail to <a href="mailto:ashamurarka@gmail.com">ashamurarka@gmail.com</a><br> -->
